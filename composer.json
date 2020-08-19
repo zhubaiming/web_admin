@@ -1,0 +1,27 @@
+{
+    "name": "poolbear/laravel-admin",
+    "description": "介绍",
+    "type": "library",
+    "authors": [
+        {
+            "name": "baiming.zhu",
+            "email": "zbm4333@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Aex\\Packagetest\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aex\\Packagetest\\PackagetestServiceProvider"
+            ],
+            "aliases": {
+                "Packagetest": "Aex\\Packagetest\\Facades\\Packagetest"
+            }
+        }
+    }
+}
