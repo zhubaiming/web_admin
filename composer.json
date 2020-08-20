@@ -1,26 +1,32 @@
 {
-    "name": "poolbear/laravel-admin",
-    "description": "介绍",
+    "name": "toolman/laravel-admin",
+    "description": "这是一款适用于Laravel 6.*版本的we管理后台",
+    "version": "v1.0.0-dev",
     "type": "library",
+    "keywords": ["laravel","admin"],
+    "homepage": "https://github.com/zhubaiming/web_admin.git",
+    "time": "2020-08-20",
+    "license": [],
     "authors": [
         {
-            "name": "baiming.zhu",
-            "email": "zbm4333@gmail.com"
+            "name": "toolman",
+            "email": "zbm4333@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
-            "Aex\\Packagetest\\": "src/"
+            "Toolman\\Admin\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Aex\\Packagetest\\PackagetestServiceProvider"
+                "Toolman\\Admin\\AdminServiceProvider"
             ],
             "aliases": {
-                "Packagetest": "Aex\\Packagetest\\Facades\\Packagetest"
+                "Admin": "Toolman\\Admin\\Facades\\Admin"
             }
         }
     }

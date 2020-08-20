@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Models\admin;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Administrator extends Model
+{
+    /**
+     * 关联到模型的数据表
+     *
+     * @var string
+     */
+    protected $table = 'admin_menus';
+
+    /**
+     * 覆盖表的主键字段名，如不设置，默认主键名为 id
+     *
+     * @var string
+     */
+    protected $primaryKey = '';
+
+    /**
+     * 如果设置的主键'非自增'或'非数字'类型，需设置该值为 false，默认为 true
+     * 配合上一设置同时使用
+     * Eloquent 默认主键字段为自增的整型，所以不设置，将自动转换主键为 int 类型
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
+    /**
+     * 如果主键不是整型，还需设置此字段，值为主键字段类型
+     *
+     * @var string
+     */
+    protected $keyType = '';
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Http\Controllers\Controller;
+
+class HomeController extends Controller
+{
+    public function index()
+    {
+        // TODO:首页展示信息逻辑
+    }
+
+    public function menus()
+    {
+        // TODO:菜单展示逻辑
+    }
+}

@@ -1,0 +1,38 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Http\Controllers\Controller;
+
+class AuthController extends Controller
+{
+    public function login()
+    {
+        // TODO:登录方法逻辑
+    }
+
+    public function logout()
+    {
+        // TODO:登出方法逻辑
+    }
+
+    public function index()
+    {
+        // TODO:后台使用用户列表逻辑
+    }
+
+    public function show()
+    {
+        // TODO:用户详细信息展示逻辑
+    }
+
+    public function update($id)
+    {
+        // TODO:更新用户信息逻辑
+    }
+
+    public function destroy($id)
+    {
+        // TODO:删除用户逻辑
+    }
+}
