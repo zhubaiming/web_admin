@@ -1,6 +1,6 @@
 <?php
 
-namespace Toolman\Admin\Commands;
+namespace Toolman\Admin\Console;
 
 use Illuminate\Console\Command;
 
