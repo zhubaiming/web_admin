@@ -3,13 +3,14 @@
 namespace Toolman\Admin;
 
 use Illuminate\Support\ServiceProvider;
+use Toolman\Admin\Commands;
 
 class AdminServiceProvider extends ServiceProvider
 {
     protected $commands = [
-        Console\AdminCommand::class,
-        Console\InstallCommand::class,
-        Console\UninstallCommand::class,
+        Commands\AdminCommand::class,
+        Commands\InstallCommand::class,
+        Commands\UninstallCommand::class,
     ];
 
     /**
@@ -29,7 +30,7 @@ class AdminServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/views', 'Packagetest');    // 视图目录指定
+//        $this->loadViewsFrom(__DIR__ . '/views', 'Packagetest');    // 视图目录指定
 
         $this->publishes([
             __DIR__ . '/../config/admin.php' => config_path('admin.php'),  // 发布配置文件到 laravel 的 config 下

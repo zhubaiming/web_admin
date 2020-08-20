@@ -3,10 +3,15 @@
     "description": "这是一款适用于Laravel 6.*版本的we管理后台",
     "version": "v1.0.0-dev",
     "type": "library",
-    "keywords": ["laravel","admin"],
+    "keywords": [
+        "laravel",
+        "admin"
+    ],
     "homepage": "https://github.com/zhubaiming/web_admin.git",
     "time": "2020-08-20",
-    "license": [],
+    "license": [
+        "MIT"
+    ],
     "authors": [
         {
             "name": "toolman",
@@ -14,7 +19,10 @@
             "role": "Developer"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=7.*",
+        "laravel/framework": "6.*"
+    },
     "autoload": {
         "psr-4": {
             "Toolman\\Admin\\": "src/"

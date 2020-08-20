@@ -8,6 +8,6 @@ class Admin extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Encore\Admin\Admin::class;
+        return \Toolman\Admin\Admin::class;
     }
 }
