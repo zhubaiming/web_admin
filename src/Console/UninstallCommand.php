@@ -46,7 +46,7 @@ class UninstallCommand extends Command
                 exit(-1);
             } else {
                 $this->info('删除即将开始');
-                $this->output->createProgressBar(4);   // 创建进度条，n - 进度条步骤总数
+                $this->output->progressStart(4);   // 创建进度条，n - 进度条步骤总数
                 /*
                 1、删除相关模型
                 2、数据迁移回滚
@@ -77,9 +77,6 @@ class UninstallCommand extends Command
             $this->output->progressAdvance();
             $this->error('模型文件夹不存在');
         }
-
-        $this->output->progressAdvance();
-        $this->info('模型删除已完成');
     }
 
     public function resetDatabase()
