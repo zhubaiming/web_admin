@@ -46,7 +46,7 @@ class InstallCommand extends Command
                 exit(-1);
             } else {
                 $this->info('安装即将开始');
-                $this->output->createProgressBar(5);   // 创建进度条，n - 进度条步骤总数
+                $this->output->progressStart(5);   // 创建进度条，n - 进度条步骤总数
                 /*
                 1、创建相关模型
                 2、执行数据迁移（数据迁移中执行数据填充)
