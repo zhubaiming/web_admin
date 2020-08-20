@@ -3,14 +3,14 @@
 namespace Toolman\Admin;
 
 use Illuminate\Support\ServiceProvider;
-use Toolman\Admin\Commands;
+use Toolman\Admin\Console;
 
 class AdminServiceProvider extends ServiceProvider
 {
     protected $commands = [
-        Commands\AdminCommand::class,
-        Commands\InstallCommand::class,
-        Commands\UninstallCommand::class,
+        Console\AdminCommand::class,
+        Console\InstallCommand::class,
+        Console\UninstallCommand::class,
     ];
 
     /**
