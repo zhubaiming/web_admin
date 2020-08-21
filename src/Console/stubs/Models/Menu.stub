@@ -18,7 +18,7 @@ class Administrator extends Model
      *
      * @var string
      */
-    protected $primaryKey = '';
+    // protected $primaryKey = '';
 
     /**
      * 如果设置的主键'非自增'或'非数字'类型，需设置该值为 false，默认为 true
@@ -27,12 +27,12 @@ class Administrator extends Model
      *
      * @var bool
      */
-    public $incrementing = false;
+    // public $incrementing = false;
 
     /**
      * 如果主键不是整型，还需设置此字段，值为主键字段类型
      *
      * @var string
      */
-    protected $keyType = '';
+    // protected $keyType = '';
 }
