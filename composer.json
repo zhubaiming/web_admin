@@ -1,6 +1,6 @@
 {
     "name": "toolman/laravel-admin",
-    "description": "这是一款适用于Laravel 6.*版本的we管理后台",
+    "description": "这是一款适用于Laravel 6.*版本的web管理后台",
     "version": "v1.0.0-dev",
     "type": "library",
     "keywords": [
