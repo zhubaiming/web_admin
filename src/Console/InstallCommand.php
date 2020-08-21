@@ -116,7 +116,8 @@ class InstallCommand extends Command
         $userModel = config('admin.database.user_model');
 
         if ($userModel::count() == 0) {
-            $this->call('db:seed', ['--class' => \App\Models\admin\User::class]);
+            $this->call('db:seed', ['--class' => \AdminUsersSeeder::class]);
+            $this->call('db:seed', ['--class' => \AdminMenusSeeder::class]);
             $this->output->progressAdvance();
             $this->info('数据填充已完成！');
         }

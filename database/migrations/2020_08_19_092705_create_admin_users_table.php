@@ -14,7 +14,12 @@ class CreateAdminUsersTable extends Migration
     public function up()
     {
         Schema::create('admin_users', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
+
+            $table->increments('id')->comment('自增id');
+            $table->string('name', 255)->nullable(false)->default('zhubaiming')->comment('测试-姓名列');
             $table->timestamps();
         });
     }
