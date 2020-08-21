@@ -84,7 +84,7 @@ class InstallCommand extends Command
 
     public function makeAdminUserModel()
     {
-        $authController = $this->directory . 'User.php';
+        $authController = $this->directory . '/User.php';
 
         $contents = $this->getStub('Models/User');
 
@@ -96,7 +96,7 @@ class InstallCommand extends Command
 
     public function makeAdminMenuModel()
     {
-        $authController = $this->directory . 'Menu.php';
+        $authController = $this->directory . '/Menu.php';
 
         $contents = $this->getStub('Models/Menu');
 
