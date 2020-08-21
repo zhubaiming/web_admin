@@ -117,7 +117,7 @@ class InstallCommand extends Command
 
         if ($userModel::count() == 0) {
             $this->laravel['files']->delete(base_path('database/seeds/DatabaseSeeder.php'));
-            $this->laravel['files']->put(base_path('database/seeds/DatabaseSeeder.php'), $this->laravel['files']->get(__DIR__ . '/../database/seeds/DatabaseSeeder.php'));
+            $this->laravel['files']->put(base_path('database/seeds/DatabaseSeeder.php'), $this->laravel['files']->get(__DIR__ . '/../../database/seeds/DatabaseSeeder.php'));
             $this->call('db:seed');
             $this->output->progressAdvance();
             $this->info('数据填充已完成！');
