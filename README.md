@@ -2,8 +2,8 @@
 <p align="center">中文文档</p>
 
 ## 要求
- - PHP >= 7.2
- - Laravel = 6.*
+ - PHP >= 7.0.0
+ - Laravel >= 6.0
  - PHP 扩展：
  
 ## 安装方法
@@ -13,7 +13,7 @@
 首先，安装laravel 5.5，并确保数据库连接设置正确。
 
 ```
-composer require poolbear/laravel-admin
+composer require toolman/laravel-admin
 ```
 
 然后运行以下命令来发布资产并进行配置：
