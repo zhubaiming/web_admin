@@ -4,7 +4,7 @@ namespace App\Models\admin;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Administrator extends Model
+class Menu extends Model
 {
     /**
      * 关联到模型的数据表

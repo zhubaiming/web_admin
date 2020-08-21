@@ -35,7 +35,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/admin.php' => config_path('admin.php'),  // 发布配置文件到 laravel 的 config 下
             __DIR__ . '/../database/migrations/' => base_path('database/migrations/'),
-            __DIR__ . '/../database/seeds/' => base_path('database/seeds/'),
+//            __DIR__ . '/../database/seeds/' => base_path('database/seeds/'),
             __DIR__ . '/../resources/views/' => base_path('resources/views/admin/'),   // 发布视图目录到 resources 下
             __DIR__ . '/../resources/lang/' => base_path('resources/lang/'),
             __DIR__ . '/../routes/' => base_path('routes/'),
