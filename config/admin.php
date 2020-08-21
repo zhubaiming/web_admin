@@ -9,6 +9,6 @@ return [
         'model' => app_path('Models/admin'),
     ],
     'database' => [
-        'user_model' => \App\Models\admin\Administrator::class,
+        'user_model' => \App\Models\admin\User::class,
     ]
 ];
