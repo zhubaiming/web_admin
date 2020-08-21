@@ -90,7 +90,7 @@ class InstallCommand extends Command
 
         $this->laravel['files']->put(
             $authController,
-            $contents
+            str_replace('', '', $contents)
         );
     }
 
@@ -102,7 +102,7 @@ class InstallCommand extends Command
 
         $this->laravel['files']->put(
             $authController,
-            $contents
+            str_replace('', '', $contents)
         );
     }
 
